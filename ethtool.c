@@ -473,8 +473,8 @@ static int rxflow_str_to_type(const char *str)
 
 static int do_version(struct cmd_context *ctx)
 {
-	fprintf(stdout,
-		PACKAGE " version " VERSION "\n");
+//	fprintf(stdout,
+//		PACKAGE " version " VERSION "\n");
 	return 0;
 }
 
@@ -3880,7 +3880,7 @@ static int show_usage(struct cmd_context *ctx)
 	int i;
 
 	/* ethtool -h */
-	fprintf(stdout, PACKAGE " version " VERSION "\n");
+	//fprintf(stdout, PACKAGE " version " VERSION "\n");
 	fprintf(stdout,
 		"Usage:\n"
 		"        ethtool DEVNAME\t"
