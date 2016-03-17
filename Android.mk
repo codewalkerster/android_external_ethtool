@@ -10,6 +10,7 @@ LOCAL_SRC_FILES := ethtool.c ethtool-copy.h internal.h net_tstamp-copy.h \
                   rxclass.c sfpid.c sfpdiag.c ixgbevf.c
 #LOCAL_C_INCLUDES := $(KERNEL_HEADERS)
 LOCAL_SHARED_LIBRARIES := libc libcutils libnetutils
+LDFLAGS += -lm
 LOCAL_MODULE = ethtool
 include $(BUILD_EXECUTABLE)
 
